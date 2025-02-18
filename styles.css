@@ -84,15 +84,28 @@ button:active {
     color: yellow;
 }
 .alert {
-    color: darkred;
-    background-color: rgba(255, 0, 0, 0.2);
+
+
     border-radius: 5px;
     padding: 5px;
     background: linear-gradient(135deg, rgba(193, 0, 50, 0.96), rgba(193, 0, 50, 0.96));
 }
-#apple{
-    text-align: center;
+#apple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2) translateX(10px) translateY(90PX);
+    z-index: -1;
+    opacity: 0.5;
+    width: 600px;
+    height: auto;
 }
+
+#apple svg {
+    width: 100%;
+    height: auto;
+}
+
 .navbar {
     min-width: 700px;
     width: 100%;
@@ -106,6 +119,7 @@ button:active {
     justify-content: center;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 .active {
     position: absolute;
